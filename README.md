@@ -46,13 +46,7 @@ If you are reading this and share the same interests, maybe we can collaborate s
 
 <h2 align="center">My Github Stats </h2>
 <div align="center">
-	<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Cooksey99&layout=compact&theme=dark&langs_count=8" alt="most used languages"/>
-</div>
-<div align="center">
 	<img src="https://github-readme-stats.vercel.app/api?username=Cooksey99&show_icons=true&theme=dark" alt="github stats" />
-</div>
-<div align="center">
-	<img src="https://visitor-badge.glitch.me/badge?page_id=Cooksey99&left_color=black&right_color=coral" alt="visitors count" />
 </div>
 
 
