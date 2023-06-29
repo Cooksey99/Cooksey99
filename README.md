@@ -43,10 +43,6 @@ If you are reading this and share the same interests, maybe we can collaborate s
 </div>
 
 
-<div align="center">
-	<img src="https://github-readme-stats.vercel.app/api?username=Cooksey99&show_icons=true&theme=dark" alt="github stats" />
-</div>
-
 
 
 
