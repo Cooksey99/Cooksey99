@@ -35,9 +35,9 @@
 </h2>
 <div>
 As a tech enthusiast, I decided to pursue a life as a software developer through self-teaching and eventually a coding bootcamp App Academy. Throughout my time there, not only did I learn many technologies (JavaScript, Python, PostgreSQL, Express.js, etc.); I dramatically increased my ability to learn, collaborate with a team, and most importantly: love what I do (coding). Since that period, I have worked in professional environments and strengthened my skills through additional studies and paid projects. My current focus is blockchain technologies, specifically in the superior language, Rust 🦀!
-
+<br></br>
 Now for the part that probably seems like an online dating profile:
 When I'm not working with code, I can often be found studying finance, hardware, blockchain technologies, or (hopefully this part does not prematurely end our relationship) watching my Kansas City Chiefs dominate on the football field.
-
+<br></br>
 If you are reading this and share the same interests, maybe we can collaborate sometime and share knowledge. I am always down to collaborate and learn something new!
 </div>
