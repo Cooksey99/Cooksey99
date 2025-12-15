@@ -32,3 +32,8 @@ fn main() {
 
 ## Let's Connect
 * [Email](mailto:andrewcooksey42@gmail.com)
+
+---
+![](https://komarev.com/ghpvc/?username=Cooksey99)
+> Since 12/15/2025
+
