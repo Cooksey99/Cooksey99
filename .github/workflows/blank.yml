@@ -6,31 +6,54 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
+      # Header & Community Stats
       - uses: lowlighter/metrics@latest
         with:
+          filename: header.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          user: Cooksey99
-          template: classic
-          # Added 'notable' and 'followup' to the base/plugins for OS contributions
-          base: header, community, repositories, metadata
+          base: header, community, metadata
           config_timezone: UTC
-          
-          # 1. ACCURATE LANGUAGES (Private + Public)
+
+      # Detailed Language Analysis (Past Year)
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: languages.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: "" # No header, just the plugin
           plugin_languages: yes
-          plugin_languages_ignored: html, css
-          plugin_languages_details: bytes-size, percentage, lines # 'lines' requires indepth
-          plugin_languages_indepth: yes    # Scans commits for actual work done
-          plugin_languages_limit: 8
-          
-          # 2. OPEN SOURCE HIGHLIGHTS
-          # This shows logos of big projects/orgs you've contributed to
+          plugin_languages_details: bytes-size, percentage, lines
+          plugin_languages_sections: recently-used, most-used
+          plugin_languages_indepth: yes
+          plugin_languages_recent_days: 365
+          plugin_languages_recent_load: 1000
+          commits_authoring: Cooksey99, andrewcooksey42@gmail.com, acooksey@actota.com, acooksey@beconsocial.com
+
+      # Open Source & Notable Contributions
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: open-source.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
           plugin_notable: yes
-          plugin_notable_from: all         # Include both user and organization repos
+          plugin_notable_from: all
           plugin_notable_types: commit, pull_request
-          
-          # 3. FOLLOWUP (Shows status of your PRs and Issues)
           plugin_followup: yes
-          plugin_followup_sections: user   # Shows your OS contribution progress
-          
-          # 4. REPOSITORY STATS (Ensures private data is fetched)
-          repositories_batch: 200
+          plugin_followup_sections: user
+
+      # Isometric Calendar (Your existing one)
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: isocalendar.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+      # Indepth Analysis
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: indepth-analysis.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_followup: yes
+          plugin_followup_indepth: yes
