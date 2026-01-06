@@ -13,12 +13,6 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: header, community, metadata
           config_timezone: UTC
-         # This shows the logos of organizations you belong to or help
-          plugin_notable: yes
-          plugin_notable_from: all
-          plugin_notable_types: commit, pull_request
-          plugin_organizations: yes
-          plugin_organizations_limit: 10
 
       # Detailed Language Analysis (Past Year)
       - uses: lowlighter/metrics@latest
@@ -34,7 +28,7 @@ jobs:
           plugin_languages_recent_load: 3000
           plugin_languages_aliases: "TSX:TypeScript, JSX:JavaScript" # Merges TSX into TypeScript
           plugin_languages_ignored: html, css, scss, shell, d, makefile, dockerfile, markdown # Hide the "noise" languages
-          plugin_languages_threshold: 2%
+          # plugin_languages_threshold: 2%
           commits_authoring: Cooksey99, andrewcooksey42@gmail.com, acooksey@actota.com, acooksey@beconsocial.com
 
       # Open Source & Notable Contributions
