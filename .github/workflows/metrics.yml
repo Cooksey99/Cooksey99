@@ -33,7 +33,7 @@ jobs:
           config_octicon: yes
           config_timezone: America/Chicago
           # config_order: base.header, isocalendar, languages, notable, sponsorships
-          repositories_affiliations: owner, collaborator
+          repositories_affiliations: owner, collaborator, organization_member
           commits_authoring: Andrew Cooksey, Cooksey99, andrewcooksey42@gmail.com, acooksey@beconsocial.com, acooksey@actota.com, acooksey@academybank.com
           
           # plugin_16personalities: yes
@@ -53,9 +53,11 @@ jobs:
           plugin_languages_ignored: html, css, scss, shell, d, makefile, dockerfile, markdown, cmake, renderscript, json, xml, yml, yaml, toml
           plugin_languages_limit: 8
           plugin_languages_details: bytes-size, percentage, lines
-          plugin_languages_sections: most-used #, recently-used
-          # plugin_languages_recent_days: 30
-          # plugin_languages_recent_load: 300
+          plugin_languages_sections: most-used, recently-used
+
+          plugin_languages_indepth_custom: Cooksey99/text-motions@macos
+          plugin_languages_recent_days: 30
+          plugin_languages_recent_load: 300
           # plugin_languages_threshold: 0.5%
           
           plugin_notable: yes
