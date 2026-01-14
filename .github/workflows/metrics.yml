@@ -32,17 +32,17 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_octicon: yes
           config_timezone: America/Chicago
-          config_order: base.header, followup isocalendar, languages, sponsorships
+          config_order: base.header, isocalendar, languages, notable, sponsorships
           repositories_affiliations: owner, collaborator
+          commits_authoring: Andrew Cooksey, Cooksey99, andrewcooksey42@gmail.com, acooksey@beconsocial.com, acooksey@actota.com, acooksey@academybank.com
           
           # plugin_16personalities: yes
           # plugin_16personalities_scores: yes
           # plugin_16personalities_sections: personality
           # plugin_16personalities_url: https://www.16personalities.com/profiles/39574ce28d6ee
-          plugin_followup: yes
-          plugin_followup_archived: yes
-          plugin_followup_indepth: yes
-          plugin_followup_sections: user, repositories
+          # plugin_followup: yes
+          # plugin_followup_indepth: yes
+          # plugin_followup_sections: user, repositories
           
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
@@ -59,10 +59,10 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_threshold: 0.5%
           
-          # plugin_notable: yes
-          # plugin_notable_from: organization
-          # plugin_notable_self: yes
-          # plugin_notable_types: commit
+          plugin_notable: yes
+          plugin_notable_from: organization
+          plugin_notable_self: yes
+          plugin_notable_types: commit
           
           plugin_sponsorships: yes
           plugin_sponsorships_sections: sponsorships
