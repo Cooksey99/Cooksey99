@@ -52,10 +52,10 @@ jobs:
           plugin_languages_colors: github
           plugin_languages_ignored: html, css, scss, shell, d, makefile, dockerfile, markdown, cmake, renderscript, json, xml, yml, yaml, toml
           plugin_languages_limit: 8
-          plugin_languages_details: bytes-size, percentage
-          plugin_languages_sections: most-used, recently-used
-          plugin_languages_recent_days: 30
-          plugin_languages_recent_load: 300
+          plugin_languages_details: bytes-size, percentage, lines
+          plugin_languages_sections: most-used #, recently-used
+          # plugin_languages_recent_days: 30
+          # plugin_languages_recent_load: 300
           # plugin_languages_threshold: 0.5%
           
           plugin_notable: yes
