@@ -32,17 +32,17 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_octicon: yes
           config_timezone: America/Chicago
-          plugin_16personalities: yes
-          plugin_16personalities_scores: yes
-          plugin_16personalities_sections: personality
-          plugin_16personalities_url: https://www.16personalities.com/profiles/39574ce28d6ee
+          # plugin_16personalities: yes
+          # plugin_16personalities_scores: yes
+          # plugin_16personalities_sections: personality
+          # plugin_16personalities_url: https://www.16personalities.com/profiles/39574ce28d6ee
           plugin_followup: yes
           plugin_followup_archived: yes
           plugin_followup_indepth: yes
-          plugin_followup_sections: repositories, discussions, issues
+          plugin_followup_sections: user, repositories
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
-          plugin_languages: yes
+          plugin_languages_indepth: yes
           plugin_languages_aliases: TSX:TypeScript, JSX:JavaScript
           plugin_languages_analysis_timeout: 15
           plugin_languages_analysis_timeout_repositories: 7.5
