@@ -41,7 +41,6 @@ jobs:
           # plugin_16personalities_sections: personality
           # plugin_16personalities_url: https://www.16personalities.com/profiles/39574ce28d6ee
           plugin_followup: yes
-          plugin_followup_indepth: yes
           plugin_followup_sections: user, repositories
           
           plugin_isocalendar: yes
@@ -54,15 +53,15 @@ jobs:
           plugin_languages_ignored: html, css, scss, shell, d, makefile, dockerfile, markdown, cmake, renderscript
           plugin_languages_limit: 8
           plugin_languages_details: bytes-size, percentage
+          plugin_languages_sections: most-used, recently-used
           plugin_languages_recent_days: 365
           plugin_languages_recent_load: 2000
-          plugin_languages_sections: most-used
           plugin_languages_threshold: 0.5%
           
           plugin_notable: yes
-          plugin_notable_from: organization
+          plugin_notable_from: all
           plugin_notable_self: yes
-          plugin_notable_types: commit
+          plugin_notable_types: commit, pull_request, issue
           
           plugin_sponsorships: yes
           plugin_sponsorships_sections: sponsorships
